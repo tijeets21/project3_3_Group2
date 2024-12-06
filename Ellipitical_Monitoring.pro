@@ -11,13 +11,16 @@ CONFIG += c++17
 SOURCES += \
     main.cpp \
     mainwindow.cpp \
-    scada_hmi.cpp
+    scada_hmi.cpp \
+    userprofile.cpp
 
 HEADERS += \
     mainwindow.h \
-    scada_hmi.h
+    scada_hmi.h \
+    userprofile.h
 
 FORMS += \
+    mainwindow.ui \
     mainwindow.ui
 
 # Default rules for deployment.
