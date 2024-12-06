@@ -253,20 +253,20 @@ void MainWindow::onHeartRateButtonClicked()
 
 void MainWindow::onDistanceButtonClicked()
 {
-    double distance = 1.0
-                      + static_cast<double>(QRandomGenerator::global()->bounded(9000))
-                            / 1000.0; // Simulate distance between 1.0 and 10.0 km
+    double distance = ui->stepCountTextEdit->toPlainText().toInt() * 0.05 * ui->inclineTextEdit->toPlainText().toInt();
+        // + static_cast<double>(QRandomGenerator::global()->bounded(9000))
+        /// 1000.0; // Simulate distance between 1.0 and 10.0 km
     ui->distanceTextEdit->setText(
         QString::number(distance, 'f', 2)); // Display with 2 decimal places
     logActivity("Distance button clicked. Distance covered: " + QString::number(distance, 'f', 2)
                 + " km.");
-    qDebug() << "Distance updated to" << distance << "km";
 }
+
 
 void MainWindow::updateHeartRate()
 {
     int heartRate = QRandomGenerator::global()
-    ->bounded(60, 100); // Simulate heart rate between 60 and 100 BPM
+                        ->bounded(60, 100); // Simulate heart rate between 60 and 100 BPM
     ui->heartRateTextEdit->setText(QString::number(heartRate));
     logActivity("Heart rate updated: " + QString::number(heartRate) + " BPM.");
     qDebug() << "Heart rate updated to" << heartRate;
@@ -301,19 +301,22 @@ void MainWindow::onClockButtonClicked()
 
 void MainWindow::onShowStepsButtonClicked()
 {
+    int CurrentStep = ui->stepCountTextEdit->toPlainText().toInt();
     // Implementation for showing steps
-    int stepCount = QRandomGenerator::global()
-                        ->bounded(1000, 10000); // Simulate step count between 1000 and 10000
+    int stepCount = CurrentStep+1;
+            // QRandomGenerator::global()
+                       // ->bounded(1000, 10000); // Simulate step count between 1000 and 10000
     ui->stepCountTextEdit->setText(QString::number(stepCount));
     logActivity("Steps button clicked. Steps: " + QString::number(stepCount));
     qDebug() << "Steps updated to" << stepCount;
+    stepCount++;
 }
 
 void MainWindow::onShowCaloriesButtonClicked()
 {
     // Implementation for showing calories burned
-    double caloriesBurned = static_cast<double>(
-        QRandomGenerator::global()->bounded(50, 500)); // Simulate calories burned between 50 and 500
+    double caloriesBurned = ui->stepCountTextEdit->toPlainText().toInt() * 0.05; //static_cast<double>(
+        //QRandomGenerator::global()->bounded(50, 500)); // Simulate calories burned between 50 and 500
     ui->caloriesTextEdit->setText(QString::number(caloriesBurned));
     logActivity("Calories button clicked. Calories burned: " + QString::number(caloriesBurned));
     qDebug() << "Calories burned updated to" << caloriesBurned;
@@ -339,9 +342,9 @@ void MainWindow::onGenerateWorkoutButtonClicked()
 
 void MainWindow::onShowDistanceButtonClicked()
 {
-    double distance = 1.0
-                      + static_cast<double>(QRandomGenerator::global()->bounded(9000))
-                            / 1000.0; // Simulate distance between 1.0 and 10.0 km
+    double distance = ui->stepCountTextEdit->toPlainText().toInt() * 0.05 * ui->inclineTextEdit->toPlainText().toInt();
+                     // + static_cast<double>(QRandomGenerator::global()->bounded(9000))
+                            /// 1000.0; // Simulate distance between 1.0 and 10.0 km
     ui->distanceTextEdit->setText(
         QString::number(distance, 'f', 2)); // Display with 2 decimal places
     logActivity("Distance button clicked. Distance covered: " + QString::number(distance, 'f', 2)
