@@ -342,9 +342,9 @@
      <widget class="QLabel" name="inclineLabel">
       <property name="geometry">
        <rect>
-        <x>230</x>
-        <y>100</y>
-        <width>41</width>
+        <x>220</x>
+        <y>110</y>
+        <width>81</width>
         <height>21</height>
        </rect>
       </property>
@@ -365,14 +365,14 @@
      <widget class="QLabel" name="speedLabel">
       <property name="geometry">
        <rect>
-        <x>360</x>
-        <y>100</y>
-        <width>41</width>
+        <x>330</x>
+        <y>110</y>
+        <width>91</width>
         <height>21</height>
        </rect>
       </property>
       <property name="text">
-       <string>Speed</string>
+       <string>Fan Speed</string>
       </property>
      </widget>
      <widget class="QTextEdit" name="fanSpeedTextEdit">
@@ -388,8 +388,8 @@
      <widget class="QLabel" name="resistanceLabel">
       <property name="geometry">
        <rect>
-        <x>470</x>
-        <y>100</y>
+        <x>460</x>
+        <y>110</y>
         <width>71</width>
         <height>21</height>
        </rect>
