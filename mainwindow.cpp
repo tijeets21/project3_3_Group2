@@ -265,11 +265,20 @@ void MainWindow::onDistanceButtonClicked()
 
 void MainWindow::updateHeartRate()
 {
+    int resist = ui->resistanceTextEdit->toPlainText().toInt();
+    if(resist >= 3){
     int heartRate = QRandomGenerator::global()
-                        ->bounded(60, 100); // Simulate heart rate between 60 and 100 BPM
+                        ->bounded(90, 120); // Simulate heart rate between 60 and 100 BPM
     ui->heartRateTextEdit->setText(QString::number(heartRate));
     logActivity("Heart rate updated: " + QString::number(heartRate) + " BPM.");
     qDebug() << "Heart rate updated to" << heartRate;
+    }else{
+    int heartRate = QRandomGenerator::global()
+                        ->bounded(60, 90); // Simulate heart rate between 60 and 100 BPM
+    ui->heartRateTextEdit->setText(QString::number(heartRate));
+    logActivity("Heart rate updated: " + QString::number(heartRate) + " BPM.");
+    qDebug() << "Heart rate updated to" << heartRate;
+}
 }
 
 void MainWindow::logActivity(const QString &activity)
