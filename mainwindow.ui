@@ -584,7 +584,7 @@
      <widget class="QLabel" name="labelDisplayAge">
       <property name="geometry">
        <rect>
-        <x>50</x>
+        <x>0</x>
         <y>10</y>
         <width>58</width>
         <height>16</height>
