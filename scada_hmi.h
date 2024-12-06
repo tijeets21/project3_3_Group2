@@ -4,18 +4,33 @@
 #include <QObject>
 #include <QString>
 
-class SCADA_HMI : public QObject {
+class SCADA_HMI : public QObject
+{
     Q_OBJECT
 public:
     explicit SCADA_HMI(QObject *parent = nullptr);
-    void displayStatistics(double speed, int resistance, int incline, int heartRate, int stepCount, double caloriesBurned, double distance, QString clockMode);
-    void controlFan(int speedLevel);  // Existing method
-    void controlResistance(int level);  // Existing method
-    void controlIncline(int level);  // Existing method
-    void controlClock(QString mode, int countdownTime = 0);  // Add this line
+    void displayStatistics(double speed,
+                           int resistance,
+                           int incline,
+                           int heartRate,
+                           int stepCount,
+                           double caloriesBurned,
+                           double distance,
+                           QString clockMode);
+    void controlFan(int speedLevel);                        // Existing method
+    void controlResistance(int level);                      // Existing method
+    void controlIncline(int level);                         // Existing method
+    void controlClock(QString mode, int countdownTime = 0); // Add this line
 
 signals:
-    void updateUI(double speed, int resistance, int incline, int heartRate, int stepCount, double caloriesBurned, double distance, QString clockMode);
+    void updateUI(double speed,
+                  int resistance,
+                  int incline,
+                  int heartRate,
+                  int stepCount,
+                  double caloriesBurned,
+                  double distance,
+                  QString clockMode);
 
 public slots:
     void onSpeedUpdated(double speed);

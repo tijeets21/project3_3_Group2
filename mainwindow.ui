@@ -1,0 +1,714 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QStackedWidget" name="stackedWidget">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>0</y>
+      <width>701</width>
+      <height>471</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>2</number>
+    </property>
+    <widget class="QWidget" name="page">
+     <widget class="QLineEdit" name="lineEditName">
+      <property name="geometry">
+       <rect>
+        <x>290</x>
+        <y>250</y>
+        <width>91</width>
+        <height>21</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="labelName_2">
+      <property name="geometry">
+       <rect>
+        <x>310</x>
+        <y>230</y>
+        <width>58</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>NAME</string>
+      </property>
+     </widget>
+     <widget class="QSpinBox" name="spinBoxAge">
+      <property name="geometry">
+       <rect>
+        <x>410</x>
+        <y>250</y>
+        <width>42</width>
+        <height>22</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="buttonSubmit">
+      <property name="geometry">
+       <rect>
+        <x>320</x>
+        <y>290</y>
+        <width>100</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>SUBMIT</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="buttonToPage2">
+      <property name="geometry">
+       <rect>
+        <x>570</x>
+        <y>40</y>
+        <width>100</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Next Page</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_5">
+      <property name="geometry">
+       <rect>
+        <x>410</x>
+        <y>230</y>
+        <width>58</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Age:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>320</x>
+        <y>110</y>
+        <width>91</width>
+        <height>111</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap>../Pictures/34.jpg</pixmap>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_3">
+     <widget class="QComboBox" name="comboBoxEatingHabits">
+      <property name="geometry">
+       <rect>
+        <x>340</x>
+        <y>180</y>
+        <width>103</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <item>
+       <property name="text">
+        <string>Healthy</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Moderate</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Unhealthy</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QComboBox" name="comboBoxWorkoutPreferences">
+      <property name="geometry">
+       <rect>
+        <x>520</x>
+        <y>180</y>
+        <width>103</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <item>
+       <property name="text">
+        <string>Cardio</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Strength</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Mixed</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QTextEdit" name="workoutPlanTextEdit">
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>280</y>
+        <width>541</width>
+        <height>201</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>270</x>
+        <y>240</y>
+        <width>171</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Workout Suggestions</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_3">
+      <property name="geometry">
+       <rect>
+        <x>540</x>
+        <y>140</y>
+        <width>131</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Workout Preferences</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_4">
+      <property name="geometry">
+       <rect>
+        <x>350</x>
+        <y>150</y>
+        <width>91</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Eating Habits</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="generateWorkoutButton">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>70</y>
+        <width>131</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Generate Workout</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="buttonToPage3">
+      <property name="geometry">
+       <rect>
+        <x>520</x>
+        <y>30</y>
+        <width>100</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Next</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_2">
+     <widget class="QTextEdit" name="clockModeTextEdit">
+      <property name="geometry">
+       <rect>
+        <x>200</x>
+        <y>30</y>
+        <width>71</width>
+        <height>31</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="clockModeLabel">
+      <property name="geometry">
+       <rect>
+        <x>200</x>
+        <y>10</y>
+        <width>71</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Clock Mode</string>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="heartRateTextEdit">
+      <property name="geometry">
+       <rect>
+        <x>340</x>
+        <y>30</y>
+        <width>81</width>
+        <height>31</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="heartRateLabel">
+      <property name="geometry">
+       <rect>
+        <x>350</x>
+        <y>10</y>
+        <width>81</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Heart Rate:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="stepCountLabel">
+      <property name="geometry">
+       <rect>
+        <x>460</x>
+        <y>10</y>
+        <width>81</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Step Count</string>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="stepCountTextEdit">
+      <property name="geometry">
+       <rect>
+        <x>460</x>
+        <y>30</y>
+        <width>71</width>
+        <height>31</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="buttonStartTimer">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>70</y>
+        <width>91</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Start Timer</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="heartRateButton">
+      <property name="geometry">
+       <rect>
+        <x>340</x>
+        <y>70</y>
+        <width>81</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Start/Stop</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="inclineLabel">
+      <property name="geometry">
+       <rect>
+        <x>230</x>
+        <y>100</y>
+        <width>41</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Incline</string>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="inclineTextEdit">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>130</y>
+        <width>81</width>
+        <height>31</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="speedLabel">
+      <property name="geometry">
+       <rect>
+        <x>360</x>
+        <y>100</y>
+        <width>41</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Speed</string>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="fanSpeedTextEdit">
+      <property name="geometry">
+       <rect>
+        <x>330</x>
+        <y>130</y>
+        <width>91</width>
+        <height>31</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="resistanceLabel">
+      <property name="geometry">
+       <rect>
+        <x>470</x>
+        <y>100</y>
+        <width>71</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Resistance</string>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="resistanceTextEdit">
+      <property name="geometry">
+       <rect>
+        <x>460</x>
+        <y>130</y>
+        <width>91</width>
+        <height>31</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="increaseInclineButton">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>160</y>
+        <width>71</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>   Increase  </string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="decreaseInclineButton">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>190</y>
+        <width>71</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>  Decrease </string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="increaseFanButton">
+      <property name="geometry">
+       <rect>
+        <x>340</x>
+        <y>160</y>
+        <width>81</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Increase </string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="decreaseFanButton">
+      <property name="geometry">
+       <rect>
+        <x>340</x>
+        <y>220</y>
+        <width>81</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Decrease </string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="fanButton">
+      <property name="geometry">
+       <rect>
+        <x>340</x>
+        <y>190</y>
+        <width>81</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Fan Control</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="increaseResistanceButton">
+      <property name="geometry">
+       <rect>
+        <x>480</x>
+        <y>160</y>
+        <width>71</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Increase </string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="decreaseResistanceButton">
+      <property name="geometry">
+       <rect>
+        <x>480</x>
+        <y>200</y>
+        <width>71</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Decrease </string>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="distanceTextEdit">
+      <property name="geometry">
+       <rect>
+        <x>340</x>
+        <y>270</y>
+        <width>81</width>
+        <height>31</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="distanceLabel">
+      <property name="geometry">
+       <rect>
+        <x>270</x>
+        <y>280</y>
+        <width>61</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Distance: </string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="caloriesLabel">
+      <property name="geometry">
+       <rect>
+        <x>270</x>
+        <y>310</y>
+        <width>61</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Calories:</string>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="caloriesTextEdit">
+      <property name="geometry">
+       <rect>
+        <x>340</x>
+        <y>310</y>
+        <width>81</width>
+        <height>31</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="buttonShowDistance">
+      <property name="geometry">
+       <rect>
+        <x>440</x>
+        <y>270</y>
+        <width>100</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Show Distance</string>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="activityLog">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>360</y>
+        <width>271</width>
+        <height>74</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="buttonToPage1">
+      <property name="geometry">
+       <rect>
+        <x>590</x>
+        <y>420</y>
+        <width>100</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Previous page</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="labelDisplayAge">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>10</y>
+        <width>58</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>AGE:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="labelDisplayName">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>40</y>
+        <width>191</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Name:</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="buttonStopTimer">
+      <property name="geometry">
+       <rect>
+        <x>90</x>
+        <y>70</y>
+        <width>100</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Stop Timer</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="buttonShowCalories">
+      <property name="geometry">
+       <rect>
+        <x>440</x>
+        <y>310</y>
+        <width>100</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Show Calories</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="buttonShowSteps">
+      <property name="geometry">
+       <rect>
+        <x>450</x>
+        <y>70</y>
+        <width>100</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Show Steps</string>
+      </property>
+     </widget>
+     <widget class="QSpinBox" name="spinBoxCountdown">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>180</y>
+        <width>42</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="minimum">
+       <number>1</number>
+      </property>
+      <property name="maximum">
+       <number>3600</number>
+      </property>
+     </widget>
+     <widget class="QLabel" name="labelCountdown">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>290</y>
+        <width>58</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Enter</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_6">
+      <property name="geometry">
+       <rect>
+        <x>290</x>
+        <y>20</y>
+        <width>51</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap>../Downloads/Pre1.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>25</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
